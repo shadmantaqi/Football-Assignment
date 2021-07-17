@@ -104,7 +104,7 @@ nav {
   background: white;
   box-shadow: 5px 5px 50px lightgray;
 }
-.footballer:hover{
+.footballer:hover {
   transition: 1s transform;
   background: black;
   color: red;
@@ -112,7 +112,7 @@ nav {
 }
 
 .footballer img {
-  width: 300px;
+  width: 100%;
 }
 
 /* highlights styles */
@@ -170,4 +170,105 @@ footer img {
 .copyright p {
   font-size: 18px;
   font-weight: 500;
+}
+
+/* media queries to make responsive */
+@media only screen and (max-width: 688px) {
+  .heading h1 {
+    font-size: 32px;
+  }
+  .nav-list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-list li {
+    margin-bottom: 5px;
+  }
+  .nav-list2 {
+    margin-top: 10%;
+  }
+  .footballer-list {
+    grid-template-columns: 1fr;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .cover-img {
+    margin-top: 50px;
+    width: 100%;
+  }
+  .all-footballer {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .footballer {
+    margin-bottom: 27px;
+    width: 90%;
+    padding: 5%;
+    background: white;
+    box-shadow: 5px 5px 50px lightgray;
+  }
+  .footballer img {
+    width: 100%;
+  }
+  .highlights {
+    flex-direction: column;
+  }
+  .left-high {
+    width: 100%;
+  }
+  .left-high h1 {
+    font-size: 36px;
+  }
+  .right-high {
+    margin-top: 30px;
+    width: 100%;
+  }
+  .text {
+    width: 80%;
+  }
+}
+
+/* for tablet devices */
+@media only screen and (min-width:688px) and (max-width: 1024px){
+  .heading h1 {
+    font-size: 48px;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .cover-img {
+    margin-top: 50px;
+    width: 80%;
+  }
+  .footballer-list {
+    grid-template-columns: 1fr 1fr;
+  }
+  .all-footballer {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .footballer {
+    margin-bottom: 27px;
+    width: 80%;
+    padding: 5%;
+    background: white;
+    box-shadow: 5px 5px 50px lightgray;
+  }
+  .highlights {
+    flex-direction: column;
+  }
+  .left-high {
+    width: 100%;
+  }
+  .left-high h1 {
+    font-size: 36px;
+  }
+  .right-high {
+    margin-top: 30px;
+    width: 100%;
+  }
+  .text {
+    width: 80%;
+  }
 }
