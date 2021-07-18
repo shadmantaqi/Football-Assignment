@@ -2,9 +2,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 
 /* Global */
-body {
+body,a {
   font-family: "Poppins", sans-serif;
   margin: 0;
+
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+.nlink:hover{
+  color: red;
+  
+}
+.red-btn:hover{
+  cursor: pointer;
+  color: white;
 }
 
 /* top bar  */
@@ -35,7 +48,11 @@ nav {
 .nav-list li {
   padding-right: 30px;
 }
-
+.nav-list li:hover {
+  color: red;
+  transition: 0.5s transform;
+  transform: scale(1.2);
+}
 /* header text and image styles */
 .container {
   display: flex;
@@ -230,7 +247,7 @@ footer img {
 }
 
 /* for tablet devices */
-@media only screen and (min-width:688px) and (max-width: 1024px){
+@media only screen and (min-width: 688px) and (max-width: 1024px) {
   .heading h1 {
     font-size: 48px;
   }
