@@ -109,6 +109,7 @@ nav {
 .footballer-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 17%;
   justify-content: center;
   margin-top: 70px;
   margin-bottom: 70px;
