@@ -103,8 +103,8 @@ nav {
 
 /* footballer styles */
 .all-footballer {
-  padding-left: 180px;
-  padding-right: 180px;
+  padding-left: 35%;
+  padding-right: 35%;
 }
 .footballer-list {
   display: grid;
